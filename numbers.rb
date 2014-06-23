@@ -11,4 +11,4 @@ puts "Largest number in the aray:  #{sorted_array[-1]}"
 
 # Sum the values in the numbers array
 total = numbers.inject(0) { |sum, number| sum + number}
-p total
+puts "Sum total of the array: #{total}"
