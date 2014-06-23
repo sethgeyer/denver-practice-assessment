@@ -49,3 +49,19 @@ forecast = [
     }
   }
 ]
+
+  # forecast.each do |key, value|
+  #   puts key["day"].capitalize
+  #   puts "High: #{key["temperatures"]["high"]}, Low: #{key["temperatures"]["low"]}"
+  #
+  # end
+
+  forecast.each do |key, value|
+    puts key["day"].capitalize
+    string = ""
+    key["temperatures"].each do |key, value|
+      string = string + "#{key.capitalize}:#{value}"
+    end
+    puts string
+
+    end
